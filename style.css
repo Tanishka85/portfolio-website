@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+.hero-about {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b051e, #0b051e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.hero-about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text .name {
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .degree {
+    color: #4303a3;
+}
+
+.scrolling-text {
+    color: violet;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.scrolling-text span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.about-me-text {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 600px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Hero Photo */
+.hero-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 37%;
+    border: 4px solid #26015d;
+}
+
+
+
+/* Skills */
+.skills {
+    padding: 80px 20px;
+    background: #0b051e;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-card {
+    background: #060008;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.skill-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    color: #00bfff;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Learning Journey */
+.journey {
+    padding: 80px 20px;
+    background: #0b051e;
+    text-align: center;
+}
+
+.journey h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.journey-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.journey-card {
+    background-color: #060008;
+    width: 220ppx;
+    padding: 25px;
+    border-radius: 12px;
+    border: 4px solid #150125;
+    color: #ccc;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-15px); }
+}
+
+/* Projects */
+.projects {
+    padding: 80px 20px;
+    background: #0b051e;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.project-card {
+    background: #222;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Contact */
+.contact {
+    padding: 80px 20px;
+    background: #0b051e;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.contact button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #00bfff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #009acd;
+}
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: violet;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b051e;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skill-cards, .journey-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
