@@ -300,5 +300,24 @@ footer {
         align-items: center;
     }
 
+}@media (max-width: 768px) {
+
+  .hero-about-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+  }
+
 }
+
+
 
