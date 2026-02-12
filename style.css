@@ -1,9 +1,15 @@
 *{
     box-sizing:border-box;
+    max-width:100%;
 }
 html,body{
     width:100%;
     overflow-x:hidden;
+}
+
+h1,h2,h3,p{
+    overflow-wrap:break:word;
+    word-break:break-word;
 }
     * {
     margin: 0;
@@ -295,3 +301,4 @@ footer {
     }
 
 }
+
