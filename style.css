@@ -180,10 +180,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    max-width: 600px;
+    gap: 40px;
+    max-width: 800px;
     margin:0 auto;
-    width:100%;
+    width:90%;
 }
 .journey-card:nth-child(odd){
     align-self:flex-start;
@@ -351,6 +351,7 @@ footer {
     
 
 }
+
 
 
 
