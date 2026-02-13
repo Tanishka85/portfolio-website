@@ -377,8 +377,21 @@ footer {
     width: 200px;
     height: 200px;
   }
+    .skill-card, .journey-card, .project-card {
+    opacity: 0;
+    transform: translateY(30px); /* small slide effect */
+    transition: all 0.8s ease-out;
+}
+
+/* Class added by JS when scrolled into view */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
 
 }
+
 
 
 
