@@ -112,6 +112,25 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+function scrollAnimations() {
+    const elements = document.querySelectorAll('.skill-card, .journey-card, .project-card');
+
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const trigger = window.innerHeight * 0.85;
+
+        if (top < trigger) {
+            el.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', scrollAnimations);
+window.addEventListener('load', scrollAnimations);
+</script>
+
 </body>
 
 </html>
+
