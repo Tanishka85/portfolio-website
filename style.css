@@ -76,7 +76,7 @@ body {
 .scrolling-text span {
     display: inline-block;
     padding-left: 100%;
-    animation: scroll 15s linear infinite;
+    animation: scroll 8s linear infinite;
 }
 
 @keyframes scroll {
@@ -135,13 +135,26 @@ body {
     width: 200px;
     padding: 20px;
     border-radius: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s ease;
     text-align: center;
+    animation: fadeUp 1.8s ease forwards;
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: translateY(-12px)scale(1.05);
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.6);
+        0 0 15px #00bfff;
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
 
 .skill-card img {
@@ -151,7 +164,7 @@ body {
 
 .skill-card h3 {
     margin-bottom: 10px;
-    color: #00bfff;
+    color: #5d0b41;
 }
 
 .skill-card p {
@@ -174,20 +187,63 @@ body {
 
 .journey-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 600px;
+    margin:0 auto;
+    width:100%;
+}
+.journey-card:nth-child(odd){
+    align-self:flex-start;
+}
+.journey-card:nth-child(even){
+    align-self:flex-end;
+}
+@keyframes slideRight {
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
 }
 
+.journey-card:nth-child(odd){
+    align-self: flex-start;
+    animation: slideRight 1.5s ease-out forwards;
+}
+.journey-card:nth-child(even){
+    align-self: flex-end;
+    animation: slideLeft 1.5s ease-out forwards;
+}
+.journey-card:nth-child(1) { animation-delay: 0s; }
+.journey-card:nth-child(2) { animation-delay: 0.1s; }
+.journey-card:nth-child(3) { animation-delay: 0.2s; }
+.journey-card:nth-child(4) { animation-delay: 0.3s; }
+
 .journey-card {
-    background-color: #060008;
-    width: 220px;
+    background-color: #150128;
+    width: 300px;
+    height: auto;
     padding: 25px;
     border-radius: 12px;
-    border: 4px solid #150125;
+    border: 4px solid #23033d;
     color: #ccc;
     font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity:0;
 }
 
 @keyframes float {
@@ -209,12 +265,13 @@ body {
 }
 
 .project-card {
-    background: #222;
+    background: #040305;
     max-width: 600px;
     margin: auto;
     padding: 30px;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    border:4px solid #2f0a49;
 }
 
 .project-card:hover {
@@ -254,7 +311,7 @@ body {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    background: #00bfff;
+    background: #5c595c;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -262,7 +319,7 @@ body {
 }
 
 .contact button:hover {
-    background: #009acd;
+    background: #2c2b2b;
 }
 
 .socials {
@@ -273,14 +330,14 @@ body {
 }
 
 .socials a {
-    color: #00bfff;
+    color: #f0eef1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .socials a:hover {
-    color: violet;
+    color: rgb(97, 94, 97);
 }
 
 /* Footer */
@@ -322,6 +379,7 @@ footer {
   }
 
 }
+
 
 
 
