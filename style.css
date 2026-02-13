@@ -26,13 +26,15 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding: 50px 20px;
+    padding: 30px 15px;
 }
 
 .hero-about-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
+    flex-direction:column;
+    text-align:center;
     flex-wrap: wrap;
     max-width: 1200px;
     width:100%;
@@ -100,8 +102,8 @@ body {
 }
 
 .hero-photo img {
-    width: 270px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 37%;
@@ -112,14 +114,14 @@ body {
 
 /* Skills */
 .skills {
-    padding: 80px 20px;
+    padding: 50px 15px;
     background: #0b051e;
     text-align: center;
 }
 
 .skills h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-size: clamp(22px, 6vw, 2rem);
     color: #fff;
 }
 
@@ -127,7 +129,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .skill-card {
@@ -137,7 +139,6 @@ body {
     border-radius: 15px;
     transition: all 0.4s ease;
     text-align: center;
-    animation: fadeUp 1.8s ease forwards;
 }
 
 .skill-card:hover {
@@ -145,16 +146,6 @@ body {
     box-shadow: 
         0 15px 35px rgba(0,0,0,0.6);
         0 0 15px #00bfff;
-}
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform: translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform: translateY(0);
-    }
 }
 
 .skill-card img {
@@ -174,14 +165,14 @@ body {
 
 /* Learning Journey */
 .journey {
-    padding: 80px 20px;
+    padding: 50px 15px;
     background: #0b051e;
     text-align: center;
 }
 
 .journey h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-size: clamp(22px, 6vw, 2rem);
     color: #fff;
 }
 
@@ -189,7 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     max-width: 600px;
     margin:0 auto;
     width:100%;
@@ -200,39 +191,8 @@ body {
 .journey-card:nth-child(even){
     align-self:flex-end;
 }
-@keyframes slideRight {
-    from{
-        opacity:0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity:1;
-        transform: translateX(0);
-    }
-}
-@keyframes slideLeft{
-    from{
-        opacity:0;
-        transform: translateX(-50px);
-    }
-    to{
-        opacity:1;
-        transform: translateX(0);
-    }
-}
 
-.journey-card:nth-child(odd){
-    align-self: flex-start;
-    animation: slideRight 1.5s ease-out forwards;
-}
-.journey-card:nth-child(even){
-    align-self: flex-end;
-    animation: slideLeft 1.5s ease-out forwards;
-}
-.journey-card:nth-child(1) { animation-delay: 0s; }
-.journey-card:nth-child(2) { animation-delay: 0.1s; }
-.journey-card:nth-child(3) { animation-delay: 0.2s; }
-.journey-card:nth-child(4) { animation-delay: 0.3s; }
+
 
 .journey-card {
     background-color: #150128;
@@ -253,14 +213,14 @@ body {
 
 /* Projects */
 .projects {
-    padding: 80px 20px;
+    padding: 50px 15px;
     background: #0b051e;
     text-align: center;
 }
 
 .projects h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-size: clamp(22px, 6vw, 2rem);
     color: #fff;
 }
 
@@ -281,14 +241,14 @@ body {
 
 /* Contact */
 .contact {
-    padding: 80px 20px;
+    padding: 50px 15px;
     background: #0b051e;
     text-align: center;
 }
 
 .contact h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-size: clamp(22px, 6vw, 2rem);
     color: #fff;
 }
 
@@ -391,6 +351,7 @@ footer {
     
 
 }
+
 
 
 
